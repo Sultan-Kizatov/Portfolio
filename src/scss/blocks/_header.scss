@@ -1,0 +1,82 @@
+.header {
+    padding: 24px 0;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        img {
+            position: absolute;
+            width: 500px;
+            top: -105px;
+            left: -240px;
+            z-index: -6;
+        }
+    }
+    &__name {
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 0;
+        color: #FFFFFF;
+        writing-mode: vertical-rl;
+        span {
+            margin-top: -9px;
+            font-weight: 700;
+            font-size: 190px;
+            line-height: 195px;
+            letter-spacing: -0.09em;
+            text-transform: uppercase;
+            color: #535353;
+        }
+    }
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        &__link {
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.525em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+            &:hover {
+                color: #EBB5FF;
+            }
+        }
+    }
+    &__position {
+        margin-top: 90px;
+        font-weight: 700;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        br {
+            display: none;
+        }
+        span {
+            font-weight: 300;
+        }
+    }
+    &__age {
+        font-weight: 300;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 0;
+    }
+    &__about-me {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 700px;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+    .btn {
+        display: none;
+    }
+}

@@ -1,0 +1,406 @@
+// media after 1400px
+@media screen and ( max-width: 1399.98px ) {
+    .container {
+        max-width: 1320px;
+        padding: 0 40px;
+    }
+}
+
+// media after 1200px
+@media screen and ( max-width: 1199.98px ) {
+    .container {
+        max-width: 1140px;
+        padding: 0;
+    }
+    .header {
+        padding: 0 30px;
+        &__wrapper {
+            img {
+                width: 450px;
+                left: -220px;
+            }
+        }
+        &__name {
+            font-size: 30px;
+            span {
+                font-size: 170px;
+                line-height: 170px;
+            }
+        }
+        .menu {
+            width: 650px;
+            &__link {
+                font-size: 11px;
+            }
+        }
+        &__position {
+            font-size: 40px;
+        }
+        &__age {
+            font-size: 20px;
+        }
+    }
+}
+
+
+// media after 992px
+@media screen and ( max-width:991.98px ) {
+    .container {
+        max-width: 960px;
+    }
+    .follow-cursor {
+        display: none;
+    }
+    .header {
+        &__wrapper {
+            img {
+                width: 450px;
+                left: -220px;
+            }
+        }
+        &__name {
+            font-size: 30px;
+            span {
+                font-size: 170px;
+                line-height: 170px;
+            }
+        }
+        .menu {
+            width: 500px;
+            &__link {
+                font-size: 10px;
+                letter-spacing: 0.450em;
+            }
+        }
+        &__position {
+            font-size: 34px;
+        }
+        &__age {
+            font-size: 18px;
+        }
+        &__about-me {
+            width: 500px;
+            font-size: 15px;
+        }
+    }
+    .swiper-button-prev, .swiper-button-next {
+        width: 250px;
+        height: 500px;
+    }
+    .portfolio {
+        padding: 100px 20px;
+        &__slider {
+            &-wrapper {
+                width: 100%;
+            }
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+    .modal {
+        &__form {
+            width: 720px;
+            height: 415px;
+        }
+        &__email {
+            margin-top: 40px;
+            width: 590px;
+        }
+        &__message {
+            width: 615px;
+            height: 210px;
+        }
+    }
+}
+
+// media after 768px
+@media screen and ( max-width: 767.98px ) {
+    .container {
+        max-width: 100%;
+    }
+    .header {
+        background: url('../../img/bg-768.png') left top/auto no-repeat;
+        &__wrapper {
+            img {
+                display: none;
+            }
+        }
+        &__name {
+            margin-top: 185px;
+            line-height: 75px;
+            span {
+                line-height: 85px;
+                font-size: 165px;
+                margin-top: -10px;
+            }
+        }
+        .menu {
+            width: 150px;
+            margin-left: auto;
+            flex-direction: column;
+            align-items: flex-end;
+            &__item {
+                margin-top: 10px;
+                :first-child {
+                    margin-top: 0;
+                }
+            }
+            &__link {
+                letter-spacing: 0.525em;
+            }
+        }
+        &__position {
+            font-size: 27px;
+            text-align: right;
+            line-height: 26px;
+            br {
+                display: block;
+            }
+        }
+        &__age {
+            font-size: 17px;
+            text-align: right;
+        }
+        &__about-me {
+            margin-right: 0;
+            text-align: right;
+            width: 300px;
+            font-size: 15px;
+        }
+        .btn {
+            display: block;
+            margin-right: 0;
+            margin-top: 100px;
+            width: 230px;
+            height: 55px;
+            font-size: 21px;
+            line-height: 53px;
+            border: 0.401513px solid #BA67D8;
+            box-shadow: 0px 9.63631px 26.4999px rgba(121, 19, 156, 0.5);
+            border-radius: 2.00757px;
+        }
+    }
+    .wavy-circle {
+        left: 60%;
+        top: 410px;
+        width: 300px;
+        height: 300px;
+        animation: none;
+        border-radius: 50%;
+        background: radial-gradient(52.28% 37.24% at 67.6% 62.76%, #8209AC 0%, #8C28AF 100%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        filter: blur(65px);
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+    }
+    .certifications {
+        padding: 70px 10px;
+        h2 {
+            font-size: 20px;
+        }
+        &__slider {
+            width: 100%;
+            margin-top: 60px;
+            padding-bottom: 100px;
+            &-wrapper {
+                width: 100%;
+            }
+            &-item {
+                width: 100%;
+            } 
+        }
+    }
+    .portfolio {
+        padding: 60px 10px;
+        h2 {
+            font-size: 20px;
+        }
+        &__slider {
+            margin-top: 60px;
+            padding-bottom: 80px;
+        }
+    }
+    .footer {
+        padding: 70px 0;
+        h2 {
+            font-size: 20px;
+        }
+        &__social {
+            margin-top: 80px;
+            width: 450px;
+            height: 50px;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .btn {
+            margin-top: 80px;
+            width: 230px;
+            height: 55px;
+            font-size: 21px;
+            line-height: 53px;
+            border: 0.401513px solid #BA67D8;
+            box-shadow: 0px 9.63631px 26.4999px rgba(121, 19, 156, 0.5);
+            border-radius: 2.00757px;
+        }
+    }
+    .modal {
+        &__form {
+            padding: 0 25px;
+            width: 520px;
+            height: 415px;
+            border: 0.354098px solid #686868;
+            backdrop-filter: blur(25.4951px);
+            border-radius: 5.31147px;
+        }
+        &__email {
+            margin-top: 40px;
+            width: 440px;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 0;
+        }
+        &__message {
+            width: 468px;
+            height: 210px;
+            font-size: 20px;
+        }
+        &__btn {
+            width: 175px;
+            height: 40px;
+            font-size: 20px;
+            margin-left: 10px;
+            border: 0.354098px solid #BFBFBF;
+            box-shadow: 0px 8.49836px 23.3705px rgba(121, 19, 156, 0.5);
+            border-radius: 1.77049px;
+        }
+    }
+}
+
+// media after 576
+@media screen and ( max-width: 575.98px ) {
+    .header {
+        padding: 0 20px;
+        background: url('../../img/bg-768.png') left top/153px 577px no-repeat;
+        &__name {
+            font-size: 18px;
+            margin-top: 140px;
+            line-height: 30px;
+            span {
+                line-height: 75px;
+                font-size: 111px;
+            }
+        }
+        .menu {
+            width: 105px;
+            &__link {
+                font-size: 7px;
+            }
+        }
+        &__position {
+            font-size: 14px;
+            line-height: 12px;
+        }
+        &__age {
+            font-size: 14px;
+        }
+        &__about-me {
+            margin-top: 40px;
+            width: 150px;
+            font-size: 8.5px;
+        }
+        .btn {
+            margin-top: 65px;
+            width: 127px;
+            height: 31px;
+            font-size: 10px;
+            line-height: 29px;
+            border-radius: 2px;
+        }
+    }
+    .wavy-circle {
+        left: 75%;
+        top: 330px;
+        width: 212px;
+        height: 212px;
+        filter: blur(45px);
+    }
+    .certifications {
+        h2 {
+            font-size: 7px;
+        }
+        &__slider {
+            padding-bottom: 60px;
+        }
+    }
+    .swiper-pagination {
+        &-bullet {
+            width: 24.56px;
+            height: 0.65px;
+        }
+    }
+    .portfolio {
+        h2 {
+            font-size: 7px;
+        }
+        &__slider {
+            padding-bottom: 60px;
+        }
+    }
+    .footer {
+        h2 {
+            font-size: 7px;
+        }
+        &__social {
+            margin-top: 60px;
+            width: 210px;
+            height: 21px;
+            img {
+                width: 21px;
+                height: 21px;
+            }
+        }
+        .btn {
+            margin-top: 60px;
+            width: 127px;
+            height: 31px;
+            font-size: 10px;
+            line-height: 29px;
+            border-radius: 2px;
+        }
+    }
+    .modal {
+        &__form {
+            padding: 0 17px;
+            width: 285px;
+            height: 362px;
+        }
+        &__email {
+            margin-top: 33px;
+            width: 235px;
+            font-size: 8.5px;
+            margin-left: 8.5px;
+            border-bottom: 0.354098px solid #F2F2F2;
+        }
+        &__message {
+            padding: 12.5px 8.5px;
+            width: 251px;
+            height: 227px;
+            font-size: 8.5px;
+            border: 0.354098px solid #F2F2F2;
+        }
+        &__btn {
+            margin-top: 25px;
+            width: 75px;
+            height: 17px;
+            font-size: 8.5px;
+            margin-left: auto;
+            margin-right: 0;
+            border-radius: 1.8px;
+            line-height: 15px;
+        }
+    }
+}

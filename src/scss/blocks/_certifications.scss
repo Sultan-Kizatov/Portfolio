@@ -1,0 +1,23 @@
+.certifications {
+    padding: 100px 0;
+    h2 {
+        @include subtitle;
+    }
+    &__slider {
+        width: 100%;
+        margin-top: 100px;
+        padding-bottom: 120px;
+        &-wrapper {
+            position: relative;
+        }
+        &-item {
+            width: 700px;
+            max-height: 500px;
+            img {
+                display: block;
+                width: 100%;
+                border-radius: 30px;
+            }
+        } 
+    }
+}

@@ -1,0 +1,25 @@
+.swiper-pagination {
+    border: 0;
+    &-bullet {
+        width: 81px;
+        height: 4px;
+        background: #535353;
+        border-radius: 0;
+        &-active {
+            background: #C4C4C4;
+        }
+    }
+}
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 340px;
+    height: 590px;
+}
+.swiper-button-prev {
+    left: 0;
+}
+.swiper-button-next {
+    right: 0;
+}

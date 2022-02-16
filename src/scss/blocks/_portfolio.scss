@@ -1,0 +1,26 @@
+.portfolio {
+    padding: 100px 0;
+    h2 {
+        @include subtitle;
+    }
+    &__slider {
+        width: 100%;
+        margin-top: 100px;
+        padding-bottom: 120px;
+        .swiper-button-prev, .swiper-button-next {
+            top: 44%;
+            transform: translateY(-50%);
+        }
+        &-wrapper {
+            position: relative;
+        }
+        &-item {
+            width: 1050px;
+            max-height: 600px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

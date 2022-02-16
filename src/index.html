@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Kizatov Sultan</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <!-- Header block -->
+    <header class="header" id="up">
+        <div class="container">
+            <div class="header__wrapper">
+                <img src="img/img-header.png" alt="image">
+                <h1 class="header__name">
+                    Sultan
+                    <br>
+                    <span>Kizatov</span> 
+                </h1>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">about me</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#certifications" class="menu__link">certifications</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#portfolio" class="menu__link">portfolio</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__link">contacts</a>
+                        </li>
+                    </ul>
+                    <h2 class="header__position" id="about">
+                        <span>ROOKIE</span><br>frontend-developer
+                    </h2>
+                    <h3 class="header__age">
+                        23 y.o. ATYRAU
+                    </h3>
+                    <div class="header__about-me">
+                        Welcome to my portfolio site. I am a beginner frontend developer. I started my career as a programmer in the middle of 2021 and to this day I am learning and developing in the direction I have chosen. So far, I have not decided to work for me as a freelancer or in some company, but for now I am studying and trying to do my own projects. If you like my portfolio I will be glad to work with you.
+                    </div>
+                    <a href="#" class="btn modal-open">message<span class="flare"></span></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Certifications block -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <h2>CERTIFICATIONS</h2>
+            <div class="certifications__slider swiper mySwiper">
+                <div class="certifications__slider-wrapper swiper-wrapper">
+                  <div class="certifications__slider-item swiper-slide">
+                    <img src="img/certifications/Сertificate_Photoshop.jpg" alt="photoshop"/>
+                  </div>
+                  <div class="certifications__slider-item swiper-slide">
+                    <img src="img/certifications/Certificate_HTML,CSS.jpg" alt="Html,Css"/>
+                  </div>
+                  <div class="certifications__slider-item swiper-slide">
+                    <img src="img/certifications/Certificate_Web.jpg" alt="Web"/>
+                  </div>
+                  <div class="certifications__slider-item swiper-slide">
+                    <img src="img/certifications/Certificate_JS.jpg" alt="Js"/>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            
+                <img class="swiper-button-prev" src="icons/prev.svg" alt="prev">
+                <img class="swiper-button-next" src="icons/next.svg" alt="next">
+                
+            </div>    
+        </div>
+    </section>
+
+    <!-- Portfolio block -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>portfolio</h2>
+            <div class="portfolio__slider swiper mySwiper">
+                <div class="portfolio__slider-wrapper swiper-wrapper">
+                  <div class="portfolio__slider-item swiper-slide">
+                    <a href="https://portfolio-sultan.netlify.app/" target="_blank">
+                        <img src="img/portfolio/portfolio.jpg" alt="portfolio"/>
+                    </a>
+                  </div>
+                  <div class="portfolio__slider-item swiper-slide">
+                    <a href="https://practic-runsmart.netlify.app/" target="_blank">
+                        <img src="img/portfolio/run-smart.jpg" alt="run-smart"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <img class="swiper-button-prev" src="icons/prev.svg" alt="prev">
+                <img class="swiper-button-next" src="icons/next.svg" alt="next">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer block -->
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <h2>contacts</h2>
+            <div class="footer__social">
+                <a target="_blank" href="https://www.instagram.com/frontend.developer.atyrau/" class="footer__social-item">
+                    <img src="icons/footer-social/instagram.svg" alt="instagram">
+                </a>
+                <a target="_blank" href="https://github.com/Sultan-Kizatov" class="footer__social-item">
+                    <img src="icons/footer-social/github.svg" alt="github">
+                </a>
+                <a target="_blank" href="https://vk.com/id704744403" class="footer__social-item">
+                    <img src="icons/footer-social/vkontakte.svg" alt="vkontakte">
+                </a>
+                <a target="_blank" href="https://wa.me/+77024617998" class="footer__social-item">
+                    <img src="icons/footer-social/whatsapp.svg" alt="whatsapp">
+                </a>
+            </div>
+            <a href="#" class="btn modal-open">message<span class="flare"></span></a>
+        </div>
+    </section>
+    
+    <!-- Animation circle -->
+    <div class="wavy-circle"></div>
+
+    <!-- Arrow up -->
+    <a href="#up" class="pageup">
+        <img src="icons/pageup.svg" alt="up">
+    </a>
+
+    <!-- Cursor -->
+    <div class="follow-cursor"></div>
+
+    <!-- Modal -->
+    <div class="modal">
+        <form class="modal__form" method="post" netlify>
+            <input class="modal__email" name="email" required placeholder="your e-mail" type="email">
+            <textarea class="modal__message" name="message" required placeholder="your message"></textarea>
+            <button class="modal__btn" type="submit">send<span class="flare"></span></button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

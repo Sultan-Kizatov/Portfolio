@@ -1,0 +1,12 @@
+.wavy-circle {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 320px;
+    width: 750px;
+    height: 750px;
+    background: radial-gradient(52.28% 37.24% at 67.6% 62.76%, #8209AC 0%, #8C28AF 100%);
+    box-shadow: 0px 0px 200px 79px rgba(140, 40, 175, 0.76);
+    border-radius: 47%;
+    animation: wavy-circle 10s ease infinite;
+}

@@ -1,0 +1,89 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+    &_active {
+        opacity: 1;
+        pointer-events: all;
+        transition: 0.5s all;
+    }
+    &__form {
+        padding: 0 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 806px;
+        height: 492px;
+        background: linear-gradient(69.56deg, rgba(0, 0, 0, 0.15) 0%, rgba(79, 79, 79, 0.15) 100%);
+        border: 1px solid #686868;
+        backdrop-filter: blur(72px);
+        border-radius: 15px;
+        transition: 0.5s all;
+        &_active {
+            transform: translate(-50%, -50%) scale(1);
+            transition: 0.5s all;
+        }
+    }
+    &__email {
+        padding: 0 5px;
+        margin: 0 20px;
+        margin-top: 53px;
+        width: 662px;
+        border: 0;
+        outline: 1;
+        border-bottom: 1px solid #F2F2F2;
+        background: linear-gradient(69.56deg, rgba(0, 0, 0, 0.15) 0%, rgba(79, 79, 79, 0.15) 100%);
+        font-weight: 400;
+        font-size: 22px;
+        color: #737373;
+    }
+    &__message {
+        margin-top: 20px;
+        padding: 25px;
+        width: 709px;
+        height: 287px;
+        outline: 1;
+        border: 1px solid #F2F2F2;
+        border-radius: 15px;
+        background: linear-gradient(69.56deg, rgba(0, 0, 0, 0.15) 0%, rgba(79, 79, 79, 0.15) 100%);
+        font-weight: 400;
+        font-size: 22px;
+        color: #737373;
+    }
+    &__btn {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 212px;
+        height: 48px;
+        background: linear-gradient(91.99deg, #A7A7A7 0%, #7D7D7D 100%);
+        border: 1px solid #BFBFBF;
+        box-shadow: 0px 24px 66px rgba(121, 19, 156, 0.5);
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        .flare {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 45px;
+            transform: skewX(-45deg);
+            animation: flareAnimation;
+            left: -150%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+            animation: flareAnimation 3s infinite linear;
+        }
+    }
+}
